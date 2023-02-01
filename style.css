@@ -1,12 +1,17 @@
-.signup {
-    width: 993px;
-    height: 1134px;
-    margin: auto;
-    background-color: rgb(186, 34, 34);
-    border-radius: 105px;
+.logincontainer{
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-color: gray;
 }
-
-body {
-    background-image: url(background.png);
+.loginwords{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-color:white;
 }
-

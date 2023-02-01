@@ -5,29 +5,27 @@
     <head> 
         <title> Login Page - Study Inc.</title>
     </head>
-    <body>
-        <section class = signup >
-                    <div class = 'splits'>
-                        <form onsubmit="sendLogin(); reset(); return false;">
-                            <p>
-                                NP EMAIL
-                            </p>
-                            <input type="email" id="email" required>
-                            <p>
-                                PASSWORD
-                            </p>
-                            <input type="text" id="password" required>
-                            <p><a href ="#">
-                                Forget Password? </a>
-                            </p>
-                            <button type="submit" id="button"> LOGIN </button>
-                        </form>
-                        <section class="signupcontainer">
-                            <div class="signups"></div>
-                            Don't have an account yet?<a href="Sign Up Page.html">Sign up now!</a>
-                            </div>
-                        </section>
-                    </div>  
+    <body background="./Images/Background.png">
+        <section class = logincontainer >
+            <section class = loginwords>
+                <form onsubmit="sendLogin(); reset(); return false;">
+                    <p>
+                        NP EMAIL
+                    </p>
+                    <input type="email" id="email" required>
+                    <p>
+                        PASSWORD
+                    </p>
+                    <input type="text" id="password" required>
+                    <p><a href ="#">
+                        Forget Password? </a>
+                    </p>
+                    <button type="submit" id="button"> LOGIN </button>
+                </form>
+                    <div class="signups"></div>
+                    Don't have an account yet?<a href="Sign Up Page.html">Sign up now!</a>
+                    </div>
+            </section>
         </section>
     </body>
 </html>
