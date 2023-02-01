@@ -2,7 +2,7 @@
     width: 993px;
     height: 1134px;
     margin: auto;
-    background-color: black;
+    background-color: rgb(186, 34, 34);
     border-radius: 105px;
 }
 
@@ -10,12 +10,3 @@ body {
     background-image: url(background.png);
 }
 
-.contactcontainer{
-    display: flex;
-    width: 50%;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border: 1px solid grey;
-  }
