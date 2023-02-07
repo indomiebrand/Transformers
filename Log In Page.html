@@ -1,31 +1,33 @@
 <!DOCTYPE html>
-<html>
-    <link href="style.css" rel="stylesheet" type ="text/css"/>
-    <script src='script'.js></script>
-    <head> 
-        <title> Login Page - Study Inc.</title>
-    </head>
-    <body background="./Images/Background.png">
-        <section class = logincontainer >
-            <section class = loginwords>
-                <form onsubmit="sendLogin(); reset(); return false;">
-                    <p>
-                        NP EMAIL
-                    </p>
-                    <input type="email" id="email" required>
-                    <p>
-                        PASSWORD
-                    </p>
-                    <input type="text" id="password" required>
-                    <p><a href ="#">
-                        Forget Password? </a>
-                    </p>
-                    <button type="submit" id="button"> LOGIN </button>
-                </form>
-                    <div class="signups"></div>
-                    Don't have an account yet?<a href="Sign Up Page.html">Sign up now!</a>
-                    </div>
-            </section>
-        </section>
-    </body>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+   </head>
+
+<body>
+	<div class="container">
+    <img src="Images/Asset 4.png" alt="signupHeader" class="signupHeader">
+  <div class="wrapperLogin">
+    <form action="#">
+      <div class="input-box">
+		  <p>NP E-MAIL</p>
+        <input type="email" required>
+      </div>
+      <div class="input-box">
+		  <p>PASSWORD</p>
+        <input type="password" required>
+      </div>
+		<div class="forgotpass">
+			<button>Forgot password?</button>
+		</div>
+      <div class="input-box button">
+        <input type="Submit" value="LOGIN">
+      </div>
+		<div class="signup">Don't have an account? <a href="Sign Up Page.html">Sign up now!</a></div>
+    </form>
+  </div>
+</div>
+</body>
 </html>

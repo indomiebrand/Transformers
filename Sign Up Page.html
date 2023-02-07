@@ -1,25 +1,44 @@
 <!DOCTYPE html>
-<html lang ="en">
-<head>
-    <meta name="viewport" content="width=device-wdith,inital-scale=1">
-    <link href="style.css" rel="stylesheet" type ="text/css"/>
-    <script src='script'.js></script>
-    <title> Sign Up</title>
-</head>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+   </head>
 <body>
-    <h1>Sign Up</h1>
-    <div class="signup">
-        <form>
-            <label>Student ID</label>
-            <input type="text"/>
-            <label>NP Email</label>
-            <input type="email"/>
-            <label>Password</label>
-            <input type="password"/>
-            <label>Confirm Password</label>
-            <input type="password"/>
-            <button type="button">Next</button>
-        </form>
-    </div>
+	<div class="container">
+    <img src="Images/Asset 3.png" alt="signupHeader" class="signupHeader">
+  <div class="wrapperSignup">
+    <form action="#">
+      <div class="input-box">
+		  <p>STUDENT ID</p>
+        <input type="text" required>
+      </div>
+      <div class="input-box">
+		  <p>NP E-MAIL</p>
+        <input type="text" required>
+      </div>
+		<div class="verify">
+			<button>Send verification code</button>
+		</div>
+		
+      <div class="input-box">
+		  <p>PASSWORD</p>
+        <input type="password" required>
+      </div>
+      <div class="input-box">
+		  <p>CONFIRM PASSWORD</p>
+        <input type="password" required>
+      </div>
+		<div class="input-box">
+		  <p>ENTER VERIFICATION CODE</p>
+        <input type="text" required>
+      </div>
+      <div class="input-box button">
+        <input type="Submit" value="NEXT">
+      </div>
+    </form>
+  </div>
+</div>
 </body>
 </html>

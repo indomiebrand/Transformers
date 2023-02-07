@@ -1,17 +1,132 @@
-.logincontainer{
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body{
+    min-height: 100vh;
     display: flex;
-    width: 50%;
-    flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
-    text-align: center;
-    border-color: gray;
-}
-.loginwords{
-    display:flex;
-    flex-wrap:wrap;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    border-color:white;
-}
+    background-image: url("Images/MicrosoftTeams-image (1).png");
+      background-size: cover;
+  }
+  
+  .wrapperSignup {
+      position: relative;
+      max-width: 430px;
+      width: 100%;
+      background-color: rgba(255,255,255,0.50);
+      padding-top: 37px;
+      padding-right: 37px;
+      padding-left: 37px;
+      padding-bottom: 37px;
+      border-radius: 15px;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  }
+  
+  .wrapperLogin {
+      position: relative;
+      max-width: 430px;
+      width: 100%;
+      background-color: rgba(255,255,255,0.50);
+      padding-top: 37px;
+      padding-right: 37px;
+      padding-left: 37px;
+      padding-bottom: 37px;
+      border-radius: 15px;
+      box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  }
+  
+  img {
+      margin: auto;
+      padding-top: 0px;
+      padding-bottom: 10px;
+      display: block;
+      width: 300px;
+  }
+  
+  .forgotpass button {
+      border: none;
+      background: none;
+      font-style: italic;
+      letter-spacing: 1px;
+      color: white;
+  }
+  
+  .verify button{
+      margin: 10px 0 0;
+      border: none;
+      background: none;
+      color: #ca314b;
+      text-decoration: underline;
+      font-weight: bold;
+      letter-spacing: 1px;
+  }
+  
+  .wrapperSignup form {
+      width: 300px;
+      margin-top: -19px;
+      margin-right: 20px;
+      margin-left: 20px;
+      margin-bottom: 16px;
+  }
+  
+  .wrapperLogin form{
+      margin-top: -19px;
+      margin-right: 5px;
+      margin-left: 5px;
+      margin-bottom: 45px;
+  }
+   .input-box{
+      height: 52px;
+      margin-top: 21px;
+      margin-right: 0;
+      margin-left: 0;
+      margin-bottom: 18px;
+  }
+  .input-box input{
+      height: 100%;
+      width: 100%;
+      padding: 0 50px;
+      font-size: 17px;
+      font-weight: 400;
+      border: 6px solid white;
+      border-radius: 6px;
+      background-color: transparent;
+      font-family: abel;
+  }
+  
+  .input-box p{
+      color: white;
+  }
+  
+  .input-box.button input{
+      background-color: transparent;
+      letter-spacing: 1px;
+      border: 6px solid white;
+      cursor: pointer;
+      margin-top: 33px;
+      color: white;
+  }
+  
+  .input-box.button {
+      margin: auto;
+      width: 150px;
+  }
+  
+  .signup {
+      margin-top: 65px;
+      margin-left: 45px;
+      margin-bottom: -50px;
+      color: white;
+      font-size: 80%;
+  }
+  
+  .signup a{
+      color: #ca314b;
+      font-style: italic;
+      font-weight: bold;
+  }
