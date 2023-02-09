@@ -8,15 +8,15 @@
 <body>
 	<div class="container">
     <img src="Images/SignUp.png" alt="signupHeader" class="signupHeader">
-  <div class="wrapperSignup">
-    <form action="#">
+  <div class="wrapperSignup" id="update-signup">
+    <form id="update-signup-form">
       <div class="input-box">
 		  <p>STUDENT ID</p>
-        <input type="text" required>
+        <input type="text" id="update-signup-studentid" required>
       </div>
       <div class="input-box">
 		  <p>NP E-MAIL</p>
-        <input type="text" required>
+        <input type="email" id="update-signup-email" required>
       </div>
 		<div class="verify">
 			<button>Send verification code</button>
@@ -24,15 +24,15 @@
 		
       <div class="input-box">
 		  <p>PASSWORD</p>
-        <input type="password" required>
+        <input type="password" id="update-signup-password" required>
       </div>
       <div class="input-box">
 		  <p>CONFIRM PASSWORD</p>
-        <input type="password" required>
+        <input type="password">
       </div>
 		<div class="input-box">
 		  <p>ENTER VERIFICATION CODE</p>
-        <input type="text" required>
+        <input type="text">
       </div>
       <div class="input-box button">
         <input type="Submit" value="NEXT">
@@ -40,5 +40,7 @@
     </form>
   </div>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
