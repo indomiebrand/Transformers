@@ -1,9 +1,7 @@
 
 $(document).ready(function () {
     const APIKEY = "63e48c27478852088da67f04";
-    $("#update-signup-container").hide();
-    $("#add-update-msg").hide();
-  
+    
     $("#signup-submit").on("click", function (e) {
       e.preventDefault();
 
@@ -45,10 +43,25 @@ $(document).ready(function () {
         console.log(response);
         
         $("#signup-submit").prop( "disabled", false);
-        
-   
-        $("#add-update-msg").show().fadeOut(3000);
+
+      
   
       });
+      
     });
+    function getSignup(all = true) {
+
+      
+      let settings = {
+        "async": true,
+        "crossDomain": true,
+        "url": "https://autobuttsrollout-174c.restdb.io/rest/signup",
+        "method": "GET", 
+        "headers": {
+          "content-type": "application/json",
+          "x-apikey": APIKEY,
+          "cache-control": "no-cache"
+        },
+      }};
+      
 })
