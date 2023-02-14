@@ -46,7 +46,7 @@ $(document).ready(function () {
     const password = $("#login-password").val();
     console.log("Email:", email, "Password:", password);
 
-    const url = `https://autobuttsrollout-174c.restdb.io/rest/user-accounts?q={"email":"${email}","password":"${password}"}`;
+    const url = "https://autobuttsrollout-174c.restdb.io/rest/signup";
 
     console.log("API URL:", url);
     const headers = {
@@ -55,7 +55,7 @@ $(document).ready(function () {
       "cache-control": "no-cache"
     };
 
-    let settings = {
+    var settings = {
       "async": true,
       "crossDomain": true,
       "url": url,
