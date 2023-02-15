@@ -1,6 +1,7 @@
 $(document).ready(function () {
   const APIKEY = "63e48c27478852088da67f04";
 
+  const loadingAnimation = document.getElementById("loading-animation");
   $("#signup-submit").on("click", function (e) {
     e.preventDefault();
 
@@ -34,9 +35,16 @@ $(document).ready(function () {
       }
     };
 
+    $("#login-animation").show();
+    setTimeout(function () {
+      
+      window.location.href = "loginpage.html";
+    }, 3000);
+
     $.ajax(settings).done(function (response) {
       console.log(response);
       $("#signup-submit").prop("disabled", false);
+      alert('Registered Successfully!');
     });
   });
 
@@ -63,6 +71,11 @@ $(document).ready(function () {
       "headers": headers,
       "processData": false
     };
+
+    $("#login-animation").show();
+    setTimeout(function () {
+    }, 3000);
+    
 
     $.ajax(settings).done(function (response) {
       console.log(response);
