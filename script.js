@@ -80,17 +80,38 @@ $(document).ready(function () {
     $.ajax(settings).done(function (response) {
       console.log(response);
       var match = false;
+      var userData;
       for (account of response) {
         console.log(account);
         if (email == account.email && password == account.password) {
           console.log('match');
           match = true;
+          userData = account;
           break;
         }
       }
-
+    
       if (match) {
-        window.location.href = "logged-in.html";
+        
+        var userDataUrl = "https://autobuttsrollout-174c.restdb.io/rest/userdata?email=" + userData.email;
+        var userDataSettings = {
+          "async": true,
+          "crossDomain": true,
+          "url": userDataUrl,
+          "method": "GET",
+          "headers": headers,
+          "processData": false
+        };
+    
+        $.ajax(userDataSettings).done(function (userDataResponse) {
+          console.log(userDataResponse);
+          
+          sessionStorage.setItem("email", userData.email);
+          sessionStorage.setItem("studentid", userData.studentid);
+          
+          window.location.href = "home.html";
+          
+        });
       } else {
         alert("Invalid email or password");
       }
@@ -98,5 +119,8 @@ $(document).ready(function () {
   });
 });
 
-
+var email = sessionStorage.getItem("email");
+var studentid = sessionStorage.getItem("studentid");
+document.getElementById("email").innerHTML = "Email: " + email;
+document.getElementById("studentid").innerHTML = "StudentID:" + studentid;
 
