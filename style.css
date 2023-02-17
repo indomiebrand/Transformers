@@ -265,7 +265,9 @@
     height: 60px;
     width:60px;
     justify-content: center;
-
+  }
+  .badgecontainer img{
+    max-width: 100%;
   }
   .badgestext{
     position:absolute;
