@@ -5,12 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
    </head>
-<body>
-    <p id ="email" class=""></p>
+<body class="homebody">
+  <div class="home-container">
+    <div class="under-container">
+      <div class="imagecontainer">
+        <img src="Images/Icon.jpg">
+        <div class="imagecontainer">
+          <p id="studentid" style="margin-top: 50px;" ></p>
+          <img src="Images/cloud-100.jpg" style="width: 120%; margin-top: 55px; margin-left: 5px;">
+        </div>
+      </div>
+      
+      <p id="studentid" ></p>
+      <p id ="email" ></p>
+      <div class="coinscontainer">
+        <p>0 Coins</p>
+      </div>
+      <div class="avatarcontainer">
+        <p>Avatar Editor</p>
+      </div>
+    </div>
+      <div class="boldtext">
+        <p>0 Post</p>
+        <p>0 Buddies</p>
+        <p>0 Points</p>
+      </div>
+    </div>
+  </div>
+  <div class="badgescontainer">
+    <div class="badgestext">
+      <p>Badges</p>
+    </div>
+    <div id="popup1" class="popup">
+      <div class="popup-content">
+        <!-- content for popup1 goes here -->
+        <button class="close-btn">X</button>
+      </div>
+    </div>
+    <div class="badgecontainer">
+      <div class="badgeimage">
+        <img src="Images/cloud-100.jpg" onclick="showPopup('popup1')">
+      </div>
+    </div>
+      <div class="badgecontainer">
+        <p>placeholder</p>
+      </div>
+      <div class="badgecontainer">
+        <p>placeholder</p>
+      </div>
+      <div class="badgecontainer">
+        <p>placeholder</p>
+      </div>
+  </div>
+  <div class="rewardcontainer">
+    <img src="Images/rewards_button-100.jpg">
+  </div>
+  <div class="roomcontainer">
+    <img src="Images/user_room-100.png">
+  </div>
+  <div class="bottomnavcontainer">
+    <div class="bottomnav">
+    <a href="home.html"><img src="Images/home_button-100.jpg"></a>
+    <a href="forum.html"><img src="Images/forum-100.jpg"></a>
+    <a href="community.html"><img src="Images/community-100.jpg"></a>
+    <a href="minigames.html"><img src="Images/Icon.jpg"></a>
+    </div>
+  </div>
 
-    <p id="studentid"></p>
-    <a href="forum.html">yes</a>
-	
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="script.js"></script>
 </body>

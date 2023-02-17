@@ -56,7 +56,6 @@ $(document).ready(function () {
 
     const url = "https://autobuttsrollout-174c.restdb.io/rest/signup";
 
-    console.log("API URL:", url);
     const headers = {
       "content-type": "application/json",
       "x-apikey": APIKEY,
@@ -122,5 +121,31 @@ $(document).ready(function () {
 var email = sessionStorage.getItem("email");
 var studentid = sessionStorage.getItem("studentid");
 document.getElementById("email").innerHTML = "Email: " + email;
-document.getElementById("studentid").innerHTML = "StudentID:" + studentid;
+document.getElementById("studentid").innerHTML = "" + studentid;
+
+function showPopup(popupId) {
+  var popup = document.getElementById(popupId);
+  var overlay = document.createElement("div");
+  var closeBtn = popup.querySelector(".close-btn");
+
+  overlay.classList.add("overlay");
+
+  if (!closeBtn) {
+    closeBtn = document.createElement("button");
+    closeBtn.classList.add("close-btn");
+    closeBtn.innerHTML = "X";
+    popup.appendChild(closeBtn);
+  }
+
+  closeBtn.addEventListener("click", function() {
+    popup.style.display = "none";
+    overlay.style.display = "none";
+  });
+
+  document.body.appendChild(overlay);
+  document.body.appendChild(popup);
+
+  overlay.style.display = "block";
+  popup.style.display = "block";
+}
 

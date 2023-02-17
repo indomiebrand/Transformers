@@ -159,4 +159,182 @@
     
   } 
 
+ .phoneframe {
+    height:fit-content;
+    width:fit-content;
+    background-color: transparent;
+ }
+ .homebody{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("Images/Homebackground.png");
+      background-size: cover;
+  }
+  .home-container{
+    display: flex;
+    background-color: white;
+    border-radius: 15px;
+    height: 250px;
+    width: 500px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position:absolute;
+    top:20px;
+  }
+  #email{
+    font-size: medium;
+    font-style: italic;
+  }
+  #studentid{
+    font-size: x-large;
+    color:orange;
+    text-transform: capitalize;
+  }
+  .coinscontainer{
+    font-size: medium;
+    background-color: lightblue;
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    float:left;
+    margin-left: 20px;
+  }
+  .imagecontainer{
+    max-width: 100px;
+    flex-direction: row;
+    display:flex;
+    width:30%;
+  }
+  .imagecontainer img {
+    max-width: 100%;
+  }
+  .avatarcontainer{
+    font-size: medium;
+    background-color: greenyellow;
+    height: 50px;
+    width: 120px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    float:right;
+    margin-right: 20px;
+  }
+  .undercontainer{
+    display: flex;
+    flex-direction: row;
+  }
+  .boldtext{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 40px;
+    font-weight: bolder;
+    gap: 10px;
+    font-size: x-large;
+  }
+  .badgescontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    height: 130px;
+    align-items: center;
+    position: absolute;
+    top:280px;
+    margin-right: 200px;
+  }
+  .badgecontainer{
+    background-color: lightgreen;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    width:60px;
+    justify-content: center;
+
+  }
+  .badgestext{
+    position:absolute;
+    margin-top: -100px;
+    margin-left: 10px;
+    font-weight: bolder;
+    font-size: xx-large;
+  }
+  .badgeimage{
+    max-width: 100px;
+    width:100px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .badgeimage img{
+    max-width: 100%;
+  }
+  .rewardcontainer{
+    max-width:170px;
+    position:absolute;
+    top:280px;
+    margin-left:310px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  }
+  .rewardcontainer img{
+    max-width:100%;
+  }
+  .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid black;
+  }
+  .roomcontainer{
+    position:absolute;
+    top:420px;
+    width:500px;
+    height: auto;
+  }
+  .roomcontainer img{
+    width:500px;
+    height:375px;
+ }
+ .bottomnav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 520px; 
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    height: auto;
+    gap:10px;
+
+ }
+ .bottomnav img{
+    width:110px;
+    height:130px
+ }
+ .bottomnavcontainer{
+    position: absolute;
+    top:800px;
+ }
  
