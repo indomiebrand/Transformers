@@ -8,7 +8,7 @@
  
 - This website is a mobile prototype of an app catered to NP Students that needs motivation to study/struggling to study/just want to manage and keep track of their studies. This website also aims to create a community of NP students/peers/lecturers that can help one another through a forum.
 
-- The website will consist of a timer that rewards students for studying (both tangible and intangible rewards included). It will also include a leaderboard that
+- The website will consist of a timer that rewards students for studying (both tangible and intangible rewards included).
 
 - Link to XD Mockup: (https://xd.adobe.com/view/f2040414-b7be-4ecb-b1fc-ede874be378b-a757/grid)
 
