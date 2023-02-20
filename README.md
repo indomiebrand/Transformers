@@ -126,3 +126,5 @@
 ### Acknowledgements
 
 - We received inspiration for this project from an IMP project which consisted of an app to help students study better through gamification systems as well. That IMP project mainly focused on a study timer and student made games, whereas ours focuses more on avatar customization as well as forum feature to help students get clarification on their questions.
+
+- Link to GitHub: (https://github.com/indomiebrand/Transformers)
